@@ -13,9 +13,7 @@ function Contact() {
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
         console.log("this is message from handleSubmit: ", message);
-        axios({
-            method: "POST", 
-            url:"http://localhost:3001/send", 
+        axios.post("/send", {
             data: {
                 name: name,   
                 email: email,  
