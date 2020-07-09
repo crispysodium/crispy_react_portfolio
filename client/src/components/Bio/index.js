@@ -1,6 +1,7 @@
 import React from "react";
 import pic from "./assets/profile-pic.JPG";
 import "./styles.css";
+import Skills from "../Skills";
 
 function Bio() {
     return (
@@ -24,6 +25,7 @@ function Bio() {
                             </p>
                         </div>
                     </div>
+                    <Skills />
                 </div>
             </div>
         </section>

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 
 function Contact() {
 
+    const email = "chri3na@gmail.com"
+    const message = "Click to Show Email";
+    const [state, setState] = useState({email: "", message: message});
+    const [toggle, setToggle] = useState(false);
     const resetForm = () => {
         document.getElementById("contact-form").reset();
     }
@@ -30,6 +34,21 @@ function Contact() {
         })
     };
 
+    const showEmail = () => {
+        if(toggle) {
+            setToggle(false);
+            setState({...state, email: "", message: message});
+        } else {
+            setToggle(true);
+            setState({...state, email: email, message: "Click to Hide Email"});
+        }
+    }
+
+    // const copyEmail = () => {
+    //     email.document.execCommand("copy");
+    //     alert("email copied to clipboard!");
+    // }
+
     return (
         <section id="contact" className="section">
             <div className="container">
@@ -54,9 +73,16 @@ function Contact() {
                                     </span>
                                 </a>
                             </div>
+                            <div className="control">
+                                <button className="button is-warning" onClick={showEmail}>{state.message}</button>
+                            </div>
+                            <div className="control">
+                                <button className="button is-light">{state.email}</button>
+                                {/* <button className="button is-dark" onClick={copyEmail}>Copy</button> */}
+                            </div>
                         </div>
                     </div>
-                    <div className="box">
+                    {/* <div className="box">
                         <h1 className="title">Send me a message</h1>
 
                         <form id="contact-form" type="submit" onSubmit={handleSubmit} method="POST">
@@ -87,7 +113,7 @@ function Contact() {
                                 </div>
                             </div>
                         </form>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

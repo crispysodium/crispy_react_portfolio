@@ -11,7 +11,7 @@ function Project(props) {
             <div className="card-content">
                 <h1 className="title is-3">{props.name}</h1>
                 <h2 className="subtitle">{props.role}</h2>
-                <h2 className="subtitle">{props.tech}</h2>
+                {/* <h2 className="subtitle">{props.tech}</h2> */}
                 <br></br>
                 <div className="field is-grouped">
                 <div className="control">
