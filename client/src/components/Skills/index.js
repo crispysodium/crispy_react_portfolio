@@ -1,23 +1,54 @@
 import React from "react";
+import "./styles.css";
+
+//logo images
+import mongo from "./assets/mongodb.svg";
+import reactLogo from "./assets/logo.svg";
+import express from "./assets/express-109.svg";
+import handlebars from "./assets/handlebars-1.svg";
+import nodejs from "./assets/nodejs-1.svg";
+
 
 function Skills() {
-    const frontend = ["HTML", "Javascript", "React.js", "Handlebars", "CSS", "JQuery"];
-    const backend = ["Node.js", "Express", "SQL", "Mongo"];
+    const technologies = [
+        {
+            name: "MongoDB",
+            logo: mongo
+        },
+        {
+            name: "Express",
+            logo: express
+        },
+        {
+            name: "React.js",
+            logo: reactLogo
+        },   
+        { 
+            name: "Node.js", 
+            logo: nodejs
+        }
+    ];
     return(
         <>
-        <h1 className="title">{`Skills & Technologies`}</h1>
-        <h2 className="subtitle">Listed in order of proficiency</h2>
-        <br></br>
-        <h2 className="title is-4">Front End</h2>
-        <ul>
-            {frontend.map(skill => <li>{skill}</li>)}
-        </ul>
-        <br></br>
-        <h2 className="title is-4">Back End</h2>
-        <ul>
-            {backend.map(skill => <li>{skill}</li>)}
-        </ul>
-        
+        <h1 className="title is-4">{`Skills & Technologies`}</h1>
+        <h2 className="title is-5 center notification is-warning">MERN Stack</h2>
+        <div className="columns">
+            {technologies.map(skill => 
+                
+                    <div key={skill.name} className="column center">
+                    {
+                        skill.logo === "" ? 
+                        skill.name 
+                        : 
+                        <>
+                        <figure className="logo center">
+                        <img src={skill.logo} alt={skill.name} />
+                        </figure>
+                        <p>{skill.name}</p>
+                        </>
+                    }
+                    </div>)}
+        </div>
     </>
     );
 }
