@@ -3,7 +3,7 @@ import React from "react";
 function Header() {
 
     return (
-        <section className="hero is-warning is-fullheight">
+        <section id="home" className="hero is-warning is-fullheight">
         {/* <!-- Hero head: will stick at the top --> */}
         {/* <div className="hero-head">
           <h1 className="title">header</h1>

@@ -15,23 +15,12 @@ function Home() {
 
         let lastId = "";
 
-        console.log(window);
-
-        const hero = document.querySelector(".hero");
-        console.log("hero: ", hero.clientHeight);
-        
-        const bio = document.querySelector("#about");
-        console.log("bio: ", bio.clientHeight);
-        
-        const projects = document.querySelector("#portfolio");
-        console.log("portfolio: ", projects.clientHeight);
-
         window.addEventListener("scroll", () => {
             let scrollPos = 100;
-            console.log("window.pageYOffset: ", window.pageYOffset);
+            // console.log("window.pageYOffset: ", window.pageYOffset);
             // console.log("window: ", window); window.innerheight;
             let fromTop = window.pageYOffset;
-            console.log("fromTop: ", fromTop);
+            // console.log("fromTop: ", fromTop);
         
             let current = [];
 
@@ -41,13 +30,13 @@ function Home() {
                 // console.log(item.textContent + " rect: ", rect);
                 // console.log(item.textContent + " offset: ", item.offsetTop);
                 if(fromTop > scrollPos) {
-                    console.log("scrollPos before += : ", scrollPos);
+                    // console.log("scrollPos before += : ", scrollPos);
                     scrollPos += item.clientHeight;
 
                     current.push(item) 
                 }
             });
-            console.log("current: ", current);
+            // console.log("current: ", current);
 
             current = current[current.length - 1];
             let id = current ? current.id : "";

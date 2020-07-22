@@ -48,7 +48,7 @@ function Portfolio() {
         }
     ]
     return (
-        <section id="portfolio" className="section category">
+        <section id="projects" className="section category">
             <div className="container">
                 {/* <div className="section"> */}
                     <div className="header notification is-warning">
