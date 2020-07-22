@@ -30,8 +30,11 @@ function Skills() {
     ];
     return(
         <>
-        <h1 className="title is-4">{`Skills & Technologies`}</h1>
-        <h2 className="title is-5 center notification is-warning">MERN Stack</h2>
+        <div className="notification is-warning">
+            <h1 className="title is-4">{`Skills & Technologies`}</h1>
+        </div>
+        
+        <h2 className="title is-5 center notification is-warning is-light">MERN Stack</h2>
         <div className="columns">
             {technologies.map(skill => 
                 

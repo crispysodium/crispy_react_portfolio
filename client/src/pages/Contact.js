@@ -50,10 +50,10 @@ function Contact() {
     // }
 
     return (
-        <section id="contact" className="section">
+        <section id="contact" className="section category">
             <div className="container">
-                <div className="section">
-                    <div className="notification">
+                {/* <div className="section"> */}
+                    <div className="header notification">
                         <h1 className="title is-5">
                             Connect with me!
                         </h1>
@@ -114,7 +114,7 @@ function Contact() {
                             </div>
                         </form>
                     </div> */}
-                </div>
+                {/* </div> */}
             </div>
         </section>
         

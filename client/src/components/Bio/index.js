@@ -5,10 +5,12 @@ import Skills from "../Skills";
 
 function Bio() {
     return (
-        <section id="about" className="section">
+        <div id="about" className="section category">
             <div className="container">
-                <div className="section">
-                    <h1 className="title">About Me</h1>
+                {/* <div className="section"> */}
+                        <div className="header notification is-warning">
+                            <h1 className="title is-4">About Me</h1>
+                        </div>
                     <div className="columns">
                         <div className="column">
                             <figure>    
@@ -26,9 +28,9 @@ function Bio() {
                         </div>
                     </div>
                     <Skills />
-                </div>
+                {/* </div> */}
             </div>
-        </section>
+        </div>
         
     )
 }

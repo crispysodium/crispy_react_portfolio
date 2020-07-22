@@ -7,8 +7,7 @@ function Navbar(props) {
             <div className="navbar-brand container">
                 <ul>
                     <li>
-                        <a className="navbar-item" 
-                        href="#about">
+                        <a className="navbar-item" href="/portfolio" onClick={props.handleScroll}>
                             About
                         </a>
                     </li>
@@ -19,12 +18,12 @@ function Navbar(props) {
                     </li>
                     <li>
                         <a className="navbar-item" href="#contact">
-                        Contact
+                            Contact
                         </a>
                     </li>
                     <li>
                         <a className="navbar-item" href="/" onClick={props.handleScroll}>
-                        Home
+                            Home
                         </a>
                     </li>
                 </ul>

@@ -48,10 +48,12 @@ function Portfolio() {
         }
     ]
     return (
-        <section id="portfolio" className="section">
+        <section id="portfolio" className="section category">
             <div className="container">
-                <div className="section">
-                    <h1 className="title">Projects</h1>
+                {/* <div className="section"> */}
+                    <div className="header notification is-warning">
+                        <h1 className="title">Projects</h1>
+                    </div>
                         {projects.map(project => {
                             return(
                                 <div key={project.name} className="columns">
@@ -118,7 +120,7 @@ function Portfolio() {
                     <div className="notification is-warning">
                         <h2 className="title is-5">Looking for my resume? Contact me!</h2>
                     </div>
-                </div>
+                {/* </div> */}
                 
             </div>
         </section>       
