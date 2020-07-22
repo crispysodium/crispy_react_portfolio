@@ -55,7 +55,7 @@ function Contact() {
                 {/* <div className="section"> */}
                     <div className="header notification">
                         <h1 className="title is-5">
-                            Connect with me!
+                            Connect with me
                         </h1>
                         
                         <div className="field is-grouped">

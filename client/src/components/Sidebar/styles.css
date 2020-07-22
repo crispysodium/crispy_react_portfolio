@@ -1,6 +1,14 @@
-.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 10px;
-    
+@media (min-width: 768px) {
+    .sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 10px;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .sticky {
+        display: none;
+    }
 }
