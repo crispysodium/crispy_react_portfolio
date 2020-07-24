@@ -52,7 +52,7 @@ function Portfolio() {
             <div className="container">
                 {/* <div className="section"> */}
                     <div className="header notification is-warning">
-                        <h1 className="title">Projects</h1>
+                        <h1 className="title is-3">Projects</h1>
                     </div>
                         {projects.map(project => {
                             return(

@@ -9,7 +9,7 @@ function Bio() {
             <div className="container">
                 {/* <div className="section"> */}
                         <div className="header notification is-warning">
-                            <h1 className="title is-4">About Me</h1>
+                            <h1 className="title is-3">About Me</h1>
                         </div>
                     <div className="columns">
                         <div className="column">

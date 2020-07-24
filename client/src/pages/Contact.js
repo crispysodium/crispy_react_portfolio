@@ -45,76 +45,43 @@ function Contact() {
     }
 
     // const copyEmail = () => {
-    //     email.document.execCommand("copy");
-    //     alert("email copied to clipboard!");
+        // email.select();
+        // document.execCommand("copy");
+        // alert("email copied to clipboard!");
     // }
 
     return (
         <section id="contact" className="section category">
             <div className="container">
-                {/* <div className="section"> */}
-                    <div className="header notification">
-                        <h1 className="title is-5">
-                            Connect with me
-                        </h1>
-                        
-                        <div className="field is-grouped">
-                            <div className="control">
-                                <a className="button is-info" href="https://www.linkedin.com/in/christinesodium122/" target="_blank" rel="noopener noreferrer">
-                                    <span className="icon is-large">
-                                        <i className="fab fa-2x fa-linkedin-in"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div className="control">
-                                <a className="button is-dark" href="https://github.com/crispysodium" target="_blank" rel="noopener noreferrer">
-                                    <span className="icon is-large">
-                                        <i className="fab fa-2x fa-github"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div className="control">
-                                <button className="button is-warning" onClick={showEmail}>{state.message}</button>
-                            </div>
-                            <div className="control">
-                                <button className="button is-light">{state.email}</button>
-                                {/* <button className="button is-dark" onClick={copyEmail}>Copy</button> */}
-                            </div>
+                <div className="header notification">
+                    <h1 className="title is-5">
+                        Connect with me
+                    </h1>
+                    
+                    <div className="field is-grouped">
+                        <div className="control">
+                            <a className="button is-info" href="https://www.linkedin.com/in/christinesodium122/" target="_blank" rel="noopener noreferrer">
+                                <span className="icon is-large">
+                                    <i className="fab fa-2x fa-linkedin-in"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div className="control">
+                            <a className="button is-dark" href="https://github.com/crispysodium" target="_blank" rel="noopener noreferrer">
+                                <span className="icon is-large">
+                                    <i className="fab fa-2x fa-github"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div className="control">
+                            <button className="button is-link is-inverted" onClick={showEmail}><span className="icon is-large"><i class="fas fa-3x fa-envelope-square"></i></span></button>
+                        </div>
+                        <div className="control">
+                            <a className="button is-light">{state.email}</a>
+                            {/* <button className={toggle ? "button is-dark"}>Copy</button> */}
                         </div>
                     </div>
-                    {/* <div className="box">
-                        <h1 className="title">Send me a message</h1>
-
-                        <form id="contact-form" type="submit" onSubmit={handleSubmit} method="POST">
-                            <div className="field">
-                                <label className="label">Name</label>
-                                <div className="control">
-                                    <input className="input" type="text" id="name"/>
-                                </div>
-                            </div>
-                            
-                            <div className="field">
-                                <label className="label">Email</label>
-                                <div className="control">
-                                    <input className="input" type="text" id="email"/>
-                                </div>
-                            </div>
-
-                            <div className="field">
-                                <label className="label">Message</label>
-                                <div className="control">
-                                    <textarea className="textarea" id="message"></textarea>
-                                </div>
-                            </div>
-
-                            <div className="field">
-                                <div className="control">
-                                    <button type="submit" className="button is-success">Send</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div> */}
-                {/* </div> */}
+                </div>
             </div>
         </section>
         

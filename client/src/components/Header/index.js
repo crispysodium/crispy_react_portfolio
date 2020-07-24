@@ -4,10 +4,6 @@ function Header() {
 
     return (
         <section id="home" className="hero is-warning is-fullheight">
-        {/* <!-- Hero head: will stick at the top --> */}
-        {/* <div className="hero-head">
-          <h1 className="title">header</h1>
-        </div> */}
       
         {/* <!-- Hero content: will be in the middle --> */}
         <div className="hero-body">

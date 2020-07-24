@@ -2,16 +2,15 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Content from "./Content";
 import Footer from "../components/Footer";
-import Sidebar from "../components/Sidebar";
 
 function Home() {
     const [state, setState] = useState("");
 
     useEffect(() => {
         const scrollItems = document.querySelectorAll(".category");
-        console.log("scrollItems: ", scrollItems);
+        // console.log("scrollItems: ", scrollItems);
 
-        const menuItems = document.querySelectorAll(".menu-item");
+        // const menuItems = document.querySelectorAll(".menu-item");
 
         let lastId = "";
 
@@ -26,14 +25,13 @@ function Home() {
 
             [...scrollItems].map(item => {
                 // console.log(item);
-                const rect = item.getBoundingClientRect();
+                // const rect = item.getBoundingClientRect();
                 // console.log(item.textContent + " rect: ", rect);
                 // console.log(item.textContent + " offset: ", item.offsetTop);
                 if(fromTop > scrollPos) {
                     // console.log("scrollPos before += : ", scrollPos);
                     scrollPos += item.clientHeight;
-
-                    current.push(item) 
+                    current.push(item);
                 }
             });
             // console.log("current: ", current);
@@ -42,9 +40,9 @@ function Home() {
             let id = current ? current.id : "";
             if (lastId !== id) {
                 lastId = id;
-                console.log("lastId: ", lastId);
+                // console.log("lastId: ", lastId);
                 setState(lastId);
-                console.log("this be state: ", state);
+                // console.log("this be state: ", state);
                 // menuItems.forEach((elem, index) => {
                 //     elem.classList.remove("active");
                 //     const filteredItems = [...menuItems].filter(elem => elem.children[0].getAttribute("href") === `#${id}`);

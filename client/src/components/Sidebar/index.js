@@ -14,11 +14,10 @@ function Sidebar(props) {
                         <Menu>
                             <Menu.List title="Navigation">
                                 {sections.map(section =>
-                                    <Menu.List.Item key={section} className="menu-item" href={`#${section.toLowerCase()}`}active={props.toggle == section.toLowerCase() ? true: false}>
+                                    <Menu.List.Item key={section} className="menu-item" href={`#${section.toLowerCase()}`} active={props.toggle == section.toLowerCase()}>
                                         {section}
                                     </Menu.List.Item>
                                 )}
-                                
                             </Menu.List>
                         </Menu>
                         

@@ -28,29 +28,65 @@ function Skills() {
             logo: nodejs
         }
     ];
+
+    const frontend = [
+        {
+            name: "Handle Bars",
+            logo: handlebars
+        },
+        {
+            name: "REST APIs",
+            logo: ""
+        },
+        {
+            name: "Flex-Box",
+            logo: ""
+        },
+        {
+            name: "Responsive Design",
+            logo: ""
+        }
+    ];
     return(
         <>
         <div className="notification is-warning">
             <h1 className="title is-4">{`Skills & Technologies`}</h1>
         </div>
-        
-        <h2 className="title is-5 center notification is-warning is-light">MERN Stack</h2>
-        <div className="columns">
+        <br></br>
+        <h2 className="title is-5 heading center">MERN Stack</h2>
+        <div className="flex-box">
             {technologies.map(skill => 
                 
-                    <div key={skill.name} className="column center">
+                    <div key={skill.name} className="skill">
                     {
                         skill.logo === "" ? 
                         skill.name 
                         : 
-                        <>
-                        <figure className="logo center">
+                        <div className="skill">
+                        <figure className="logo">
                         <img src={skill.logo} alt={skill.name} />
                         </figure>
                         <p>{skill.name}</p>
-                        </>
+                        </div>
                     }
                     </div>)}
+        </div>
+        <br></br>
+        <h2 className="title is-5 heading center">Front End</h2>
+        <div className="flex-box">
+            {frontend.map(skill =>
+                skill.logo === "" ? 
+                <div className="skill"> 
+                <p>{skill.name}</p>
+                </div>
+                : 
+                <div className="skill"> 
+                <figure className="logo">
+                <img src={skill.logo} alt={skill.name} />
+                </figure>
+                <p>{skill.name}</p>
+                </div>
+                    )}
         </div>
     </>
     );
