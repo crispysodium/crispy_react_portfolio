@@ -1,6 +1,6 @@
 # crispysodium portfolio
 ## Welcome to the repo of my first React portfolio.
-Link to Deployed website: https://damp-taiga-57370.herokuapp.com/
+Link to Deployed website: https://christine-na.herokuapp.com/
 
 ## Pages: 
 * Landing Page
