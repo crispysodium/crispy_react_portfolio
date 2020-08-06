@@ -20,7 +20,7 @@ function Bio() {
                     </div>
                     <div className="column">
                         <p>
-                            Hi! Glad to see you here. I am a web developer interested in games, entertainment, and analytics. My first job in the food industry plunged me into the world of testing and innovations of restaurant operations. I majored in industrial engineering because I think math, observations, and data analytics are powerful tools to solve real business problems. I asked a lot of questions to satiate my desire to understand and unpack the root of any problem. I strive to reduce any waste in effort and resources. My main goal is always to debunk any bias or assumptions and present the facts through data and context.
+                            Hi! Glad to see you here. I am a web developer interested in games, entertainment, and analytics. My first job in the food industry plunged me into the world of testing and innovation of restaurant operations. I majored in industrial engineering because I think math, observations, and data analytics are powerful tools to solve real business problems. I ask a lot of questions to satiate my desire to understand and unpack the root of any problem. I strive to reduce any waste in effort and resources. My main goal is always to debunk any bias or assumptions and present the facts through data and context.
                         </p> 
                         <br></br>
                         <p>

@@ -29,24 +29,24 @@ function Skills() {
         }
     ];
 
-    const frontend = [
-        {
-            name: "Handle Bars",
-            logo: handlebars
-        },
-        {
-            name: "REST APIs",
-            logo: ""
-        },
-        {
-            name: "Flex-Box",
-            logo: ""
-        },
-        {
-            name: "Responsive Design",
-            logo: ""
-        }
-    ];
+    // const frontend = [
+    //     {
+    //         name: "Handle Bars",
+    //         logo: handlebars
+    //     },
+    //     {
+    //         name: "REST APIs",
+    //         logo: ""
+    //     },
+    //     {
+    //         name: "Flex-Box",
+    //         logo: ""
+    //     },
+    //     {
+    //         name: "Responsive Design",
+    //         logo: ""
+    //     }
+    // ];
     return(
         <>
         <div className="notification is-warning">
@@ -71,8 +71,8 @@ function Skills() {
                     }
                     </div>)}
         </div>
-        <br></br>
-        <h2 className="title is-5 heading center">Front End</h2>
+        {/* <br></br> */}
+        {/* <h2 className="title is-5 heading center">Front End</h2>
         <div className="flex-box">
             {frontend.map(skill =>
                 skill.logo === "" ? 
@@ -87,7 +87,7 @@ function Skills() {
                 <p>{skill.name}</p>
                 </div>
                     )}
-        </div>
+        </div> */}
     </>
     );
 }
